@@ -2,6 +2,7 @@ package ece155b.test;
 
 import ece155b.data.Distributor;
 import ece155b.data.Supply;
+import ece155b.data.UserData;
 import ece155b.data.SellSupply;
 import ece155b.data.NeedSupply;
 import ece155b.xml.XMLParser;
@@ -16,7 +17,7 @@ public class DemoXML {
     }
     
     public DemoXML(String  args) {
-    	String fileurl = "hello.xml";
+    	String fileurl = UserData.fileDir + "hello.xml";
 
     	Distributor dist = new Distributor();
     	dist.name = "The Company";

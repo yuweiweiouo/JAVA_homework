@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 <project name="Project1: Applet project" default="jar" basedir=".">
     <description>Builds, tests, and runs the project Project1.</description>
-    <property name="User" value="Your Name" />
+    <property name="User1" value="陳昱偉" />
+    <property name="User2" value="林家伶" />
     <property name="Project" value="Project 01" />
     
     <property name="projectdir" location="." /> 
@@ -16,7 +17,7 @@
     </target>
     
     <target name="compile" depends="init" description="compile the source">
-        <javac srcdir="${src}" destdir="${build}" includeantruntime="false"/> 
+        <javac srcdir="${src}" destdir="${build}" includeantruntime="false" encoding="UTF-8"/> 
     </target>
     
     <target name="jar" depends="compile" description="Creates the client jar file">

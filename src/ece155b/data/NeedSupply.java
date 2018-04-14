@@ -2,9 +2,9 @@ package ece155b.data;
 
 public class NeedSupply
 {
-	public Supply supply;
+	public Supply supply = new Supply();
 	public int amountNeeded;
-
+	
 	public String toXML()
 	{
 		String returnstr="";

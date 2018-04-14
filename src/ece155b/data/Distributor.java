@@ -10,7 +10,7 @@ public class Distributor extends Company
 	public Distributor()
 	{
 		sellitems = new Vector ();
-		needitems = new Vector ();
+		needitems = new Vector ();		
 	}
 
 	public void addSellItem(SellSupply ss)
@@ -21,6 +21,21 @@ public class Distributor extends Company
 	public void addNeedItem(NeedSupply ns)
 	{
 		needitems.add(ns);
+	}
+	
+	public Vector getSellItems()
+	{
+		return sellitems;
+	}
+	
+	public Vector getNeedItems()
+	{
+		return needitems;
+	}
+	
+	public void clearAllIteams(){
+		sellitems.clear();
+		needitems.clear();
 	}
 
 	public String toXML()

@@ -2,9 +2,9 @@ package ece155b.data;
 
 public class SellSupply
 {
-	public Supply supply;
+	public Supply supply = new Supply();
 	public int amountAvailable;
-
+	
 	public String toXML()
 	{
 		String returnstr="";
@@ -21,7 +21,7 @@ public class SellSupply
 		String returnstr="";
 		returnstr += "|| SellSupply\n";
 			returnstr += "||| SupplyName: "+supply.name+"\n";
-			returnstr += "||| SupplyPrice: "+supply.price+"\n";
+			returnstr += "||| SupplyPrice: $"+supply.price+"\n";
 			returnstr += "||| SupplyAmountAvailable: "+amountAvailable+"\n";
 		return returnstr+"\n";
 	}
