@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <project name="Project1: Applet project" default="jar" basedir=".">
     <description>Builds, tests, and runs the project Project1.</description>
-    <property name="User1" value="陳昱偉" />
-    <property name="User2" value="林家伶" />
+    <property name="User" value="陳昱偉" />
     <property name="Project" value="Project 01" />
     
     <property name="projectdir" location="." /> 
